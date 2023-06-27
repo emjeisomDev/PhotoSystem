@@ -1,0 +1,26 @@
+mat-toolbar{
+  padding: 0 10px;
+  border-radius: 9px;
+  .app-logo-name{
+    min-width: 12em;
+    width: auto;
+    display: flex;
+    align-items: center;
+    background: #1a3053;
+    border-radius: 10px;
+    cursor: pointer;
+
+    .app-name{
+      margin: 0.5em;
+      color: #E2FF65;
+    }
+
+    .app-icon{
+      font-size: 32px;
+      color: #E2FF65;
+      width: 32px;
+      height: 32px;
+      margin: 0 8px;
+    }
+  }
+}

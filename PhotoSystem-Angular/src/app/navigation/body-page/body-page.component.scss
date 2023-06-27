@@ -1,0 +1,24 @@
+.display-page{
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .header{
+    width: 100%;
+  }
+
+  .middle-page{
+    display: flex;
+    padding: 8px 0;
+    gap: 8px;
+    min-height: calc(100vh - 145px);
+  }
+
+  .footer{
+    width: 100%;
+    align-self: flex-end;
+    margin-top: auto;
+  }
+
+}
