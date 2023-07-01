@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sidenav-list',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidenav-list.component.scss']
 })
 export class SidenavListComponent {
+  @Input() sidenavClosed: boolean = true;
+  @Input() sidenavResizeTo!: number;
 
 }

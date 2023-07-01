@@ -1,6 +1,8 @@
 <mat-toolbar color="primary">
-  <div class="app-logo-name">
-    <mat-icon class="app-icon">solar_power</mat-icon>
-    <h2 class="app-name">Photo System</h2>
+
+  <div class="app-logo-name" [ngStyle]="{ 'min-width.px' : appLogoWidth }">
+    <mat-icon class="app-icon" (click)="toggleMenu()">solar_power</mat-icon>
+    <h2 class="app-name" *ngIf="collapsed">Photo System</h2>
   </div>
+
 </mat-toolbar>

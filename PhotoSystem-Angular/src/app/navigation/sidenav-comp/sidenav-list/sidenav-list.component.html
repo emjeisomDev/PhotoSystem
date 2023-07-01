@@ -1,26 +1,26 @@
 <mat-list class="sidenav-list">
 
-  <mat-list-item class="list-item">
+  <mat-list-item class="list-item" [ngStyle]="{ 'width.px' : sidenavResizeTo }">
 
     <mat-icon matListItemIcon class="icon-list">home</mat-icon>
-    <a matListItemTitle class="list-link" href="">Item 1</a>
-    <mat-icon matListItemIcon class="sub-list-icon">more_vert</mat-icon>
+    <a matListItemTitle class="list-link" href="" *ngIf="!sidenavClosed">Item 1</a>
+    <mat-icon matListItemIcon class="sub-list-icon" *ngIf="!sidenavClosed">more_vert</mat-icon>
 
   </mat-list-item>
 
-  <mat-list-item class="list-item">
+  <mat-list-item class="list-item" [ngStyle]="{ 'width.px' : sidenavResizeTo }">
 
     <mat-icon matListItemIcon class="icon-list">home</mat-icon>
-    <a matListItemTitle class="list-link" href="">Item 2</a>
-    <mat-icon matListItemIcon class="sub-list-icon">more_vert</mat-icon>
+    <a matListItemTitle class="list-link" *ngIf="!sidenavClosed">Item 2</a>
+    <mat-icon matListItemIcon class="sub-list-icon" *ngIf="!sidenavClosed">more_vert</mat-icon>
 
   </mat-list-item>
 
-  <mat-list-item class="list-item">
+  <mat-list-item class="list-item" [ngStyle]="{ 'width.px' : sidenavResizeTo }">
 
     <mat-icon matListItemIcon class="icon-list">home</mat-icon>
-    <a matListItemTitle class="list-link" href="">Item 3</a>
-    <mat-icon matListItemIcon class="sub-list-icon">more_vert</mat-icon>
+    <a matListItemTitle class="list-link" *ngIf="!sidenavClosed">Item 3</a>
+    <mat-icon matListItemIcon class="sub-list-icon" *ngIf="!sidenavClosed">more_vert</mat-icon>
 
   </mat-list-item>
 
