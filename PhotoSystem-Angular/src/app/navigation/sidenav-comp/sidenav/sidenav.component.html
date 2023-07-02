@@ -1,21 +1,20 @@
 <div class="sidenav" [ngStyle]="{ 'width.px' : sidenavResizeTo }">
 
-  <div class="app-logo-name" [ngStyle]="{ 'min-width.px' : sidenavResizeTo }">
+   <div class="sinav-header">
 
-    <mat-icon class="app-icon" (click)="toggleMenu()">solar_power</mat-icon>
-    <h2 class="app-name" *ngIf="!sidenavClosed">Photo System</h2>
+      <mat-list-item class="app-logo-name" [ngStyle]="{ 'min-width.px' : sidenavResizeTo }">
 
-    <div class="btn-close-sidenav" *ngIf="!sidenavClosed">
-      <button class="btn-close" (click)="closeMenu()" >
-        <i class="fas fa-times" ></i>
-      </button>
-    </div>
+         <mat-icon matListItemIcon class="app-icon" (click)="toggleMenu()">solar_power</mat-icon>
+         <h2 matListItemTitle class="app-name" *ngIf="!sidenavClosed">Photo System</h2>
+         <mat-icon matListItemIcon class="btn-close" (click)="closeMenu()" *ngIf="!sidenavClosed">close</mat-icon>
 
-  </div>
+       </mat-list-item>
 
-  <app-sidenav-list
-    [sidenavClosed]="sidenavClosed"
-    [sidenavResizeTo]="sidenavResizeTo"
-  ></app-sidenav-list>
+   </div>
+
+    <app-sidenav-list
+      [sidenavClosed]="sidenavClosed"
+      [sidenavResizeTo]="sidenavResizeTo"
+    ></app-sidenav-list>
 
 </div>
