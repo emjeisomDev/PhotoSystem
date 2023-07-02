@@ -6,7 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./sidenav-list.component.scss']
 })
 export class SidenavListComponent {
-  @Input() sidenavClosed: boolean = true;
-  @Input() sidenavResizeTo!: number;
-
+   @Input() sidenavClosed: boolean = true;
+   @Input() sidenavResizeTo!: number;
 }

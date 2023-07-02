@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NavigationRoutingModule } from './navigation-routing.module';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
@@ -24,6 +25,7 @@ import { SidenavListComponent } from './sidenav-comp/sidenav-list/sidenav-list.c
     CommonModule,
     NavigationRoutingModule,
     AppMaterialModule,
+    BrowserAnimationsModule
   ],
   exports:[
     BodyPageComponent

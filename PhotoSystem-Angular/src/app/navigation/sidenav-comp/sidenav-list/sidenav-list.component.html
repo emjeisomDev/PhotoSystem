@@ -4,9 +4,12 @@
 
     <mat-icon matListItemIcon class="icon-list">home</mat-icon>
     <a matListItemTitle class="list-link" *ngIf="!sidenavClosed">Item 1</a>
-    <mat-icon matListItemIcon class="sub-list-icon" *ngIf="!sidenavClosed">more_vert</mat-icon>
+    <mat-icon matListItemIcon class="sub-list-icon" *ngIf="!sidenavClosed" [mat-menu-trigger-for]="menu">more_vert</mat-icon>
+
+    <mat-menu #menu="matMenu">
+
+    </mat-menu>
 
   </mat-list-item>
-
 
 </mat-list>
