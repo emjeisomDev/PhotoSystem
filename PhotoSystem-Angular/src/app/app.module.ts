@@ -3,13 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppMaterialModule } from './shared/app-material/app-material.module';
+import { BodyPageComponent } from './body-page/body-page.component';
 import { NavigationModule } from './navigation/navigation.module';
 import { PagesModule } from './pages/pages.module';
+import { AppMaterialModule } from './shared/app-material/app-material.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BodyPageComponent
   ],
   imports: [
     BrowserModule,
