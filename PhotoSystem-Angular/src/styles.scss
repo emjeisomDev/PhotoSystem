@@ -12,3 +12,30 @@ $custom-theme: mat-light-theme($custom-app-primary, $custom-app-secondary, $cust
 
 html, body { height: calc(100% - 10px); }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: #E4E4E4; padding: 8px;}
+
+.card{
+   display: flex;
+   flex-direction: column;
+   border-radius: 8px;
+   background-color: #E4E4E4;
+   margin-top: 15px;
+   box-shadow: 0 4px .5 #EFEFEF;
+   height: calc(100% - 20px);
+
+   .card-head{
+      padding: 5px 10px 0 10px;
+      h1,h2,h3,h4,h5{
+         padding: 5px;
+         margin: 5px 0 10px 0;
+      }
+   }
+
+   .card-body{
+      padding: 5px 10px 0 10px;
+
+      p{
+         margin-bottom: 10px;
+      }
+   }
+
+}
