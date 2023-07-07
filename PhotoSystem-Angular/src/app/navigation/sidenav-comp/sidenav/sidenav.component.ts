@@ -10,6 +10,7 @@ import { fadeInOut , rotate} from '../../animations';
 export class SidenavComponent {
    public sidenavClosed: boolean = false;
    public sidenavResizeTo!: number;
+   public routeHome: string = "home";
 
    closeMenu():void{
       this.sidenavClosed = true;
