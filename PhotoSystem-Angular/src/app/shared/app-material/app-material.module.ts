@@ -9,6 +9,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 
 
 
@@ -23,7 +25,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatCardModule,
     MatFormFieldModule,
     MatRadioModule,
-    MatInputModule
+    MatInputModule,
+    MatProgressBarModule
   ]
 })
 export class AppMaterialModule { }

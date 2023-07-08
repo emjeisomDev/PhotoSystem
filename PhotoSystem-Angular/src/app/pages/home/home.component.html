@@ -1,23 +1,58 @@
 <div class="card">
 
    <div class="card-head">
-      <h1>Lorem ipsum - Dashboard</h1>
+      <h1>
+         <mat-icon>dashboard</mat-icon>
+         Dashboard
+      </h1>
    </div>
 
    <div class="card-body">
-     <p>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, temporibus
-       a? Quia vel voluptates tempora beatae error sit corporis nobis,
-       consectetur repellendus ex ipsum saepe, quo, praese ntium harum nulla
-       quisquam.
-     </p>
 
-     <p>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, temporibus
-       a? Quia vel voluptates tempora beatae error sit corporis nobis,
-       consectetur repellendus ex ipsum saepe, quo, praesentium harum nulla
-       quisquam.
-     </p>
+      <div class="card-profile">
+
+         <mat-card class="card-profile-body">
+
+            <mat-card-header class="card-profile-header">
+              <mat-card-title>Welcome back!</mat-card-title>
+              <mat-card-subtitle>PhotoSystem Desing</mat-card-subtitle>
+            </mat-card-header>
+
+            <img mat-card-image
+               class="card-profile-image"
+               src="https://material.angular.io/assets/img/examples/shiba1.jpg"
+               alt="Photo of a Shiba Inu">
+
+            <mat-card-content class="card-profile-content">
+               <div class="profile-content-container">
+
+                  <div class="content-name-role">
+                     <h2 class="profile-name">Full Name</h2>
+                     <h4 class="profile-role">Role</h4>
+                  </div>
+
+                  <div class="content-task-status">
+                     <h2>Tasks Status</h2>
+                     <span class="progress-bar-number">40 %</span>
+                     <mat-progress-bar color='primary' class="progress-bar" mode="determinate" value="50"></mat-progress-bar>
+                     <button mat-fab extended class="view-profile-button" color="primary">
+                        <span>View Profile</span>
+                        <mat-icon class="button-icon">arrow_forward</mat-icon>
+                      </button>
+                  </div>
+
+               </div>
+            </mat-card-content>
+
+          </mat-card>
+      </div>
+
+      <div class="card-tasks">
+
+
+
+      </div>
+
    </div>
 
 
