@@ -32,7 +32,7 @@
                   </div>
 
                   <div class="content-task-status">
-                     <h2>Tasks Status</h2>
+                     <h2>Task Status</h2>
                      <span class="progress-bar-number">40 %</span>
                      <mat-progress-bar color='primary' class="progress-bar" mode="determinate" value="50"></mat-progress-bar>
                      <button mat-fab extended class="view-profile-button" color="primary">
@@ -45,12 +45,46 @@
             </mat-card-content>
 
           </mat-card>
+
+
       </div>
 
       <div class="card-tasks">
+         <mat-card class="card-task-body">
 
+            <mat-card-header class="card-task-header">
+               <mat-card-title class="card-task-header-title">Assigned Tasks</mat-card-title>
+            </mat-card-header>
 
+            <mat-card-content class="card-task-content">
+               <mat-list class="task-content-container">
+                  <mat-list-item class="status-task">
+                     <mat-icon matListItemIcon class="lateral-bar" > </mat-icon>
+                     <h2 matListItem class="status-task-group">Completed</h2>
+                     <span class="status-task-done">X tasks</span>
+                     <mat-icon matListItemIcon class="btn-edit-task" >edit</mat-icon>
+                  </mat-list-item>
+                  <mat-list-item class="status-task">
+                     <mat-icon matListItemIcon class="lateral-bar" > </mat-icon>
+                     <h2 matListItem class="status-task-group">Active</h2>
+                     <span class="status-task-done">X tasks</span>
+                     <mat-icon matListItemIcon class="btn-edit-task" >edit</mat-icon>
+                  </mat-list-item>
+                  <mat-list-item class="status-task">
+                     <mat-icon matListItemIcon class="lateral-bar" > </mat-icon>
+                     <h2 matListItem class="status-task-group">Pending</h2>
+                     <span class="status-task-done">X tasks</span>
+                     <mat-icon matListItemIcon class="btn-edit-task" >edit</mat-icon>
+                  </mat-list-item>
+               </mat-list>
 
+               <button mat-fab extended class="datails-button" color="primary">
+                  <span>Details</span>
+                  <mat-icon class="button-icon">arrow_forward</mat-icon>
+                </button>
+
+            </mat-card-content>
+         </mat-card>
       </div>
 
    </div>

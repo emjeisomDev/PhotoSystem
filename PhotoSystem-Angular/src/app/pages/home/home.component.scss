@@ -81,13 +81,13 @@
                      font-weight: bold;
                   }
 
-                  .progress-bar{
+                  .progress-bar {
                      height: 20px;
-                     color:#1A3053;
+                     color: #1A3053;
                      // background-color: #3A3838;
                   }
 
-                  .view-profile-button{
+                  .view-profile-button {
                      margin-top: 7.5px;
                      height: 30%;
                      width: 40%;
@@ -95,21 +95,83 @@
                      justify-content: center;
                      align-self: flex-end;
 
-                     .button-icon{
+                     .button-icon {
                         order: 2;
                         margin-left: 15px;
                         margin-right: 0;
                      }
 
                   }
-
                }
-
             }
          }
-
       }
    }
 
-   
+   .card-tasks {
+
+      .card-task-body {
+         height: 100%;
+         background: #B4C6E7;
+
+         .card-task-header {
+            height: 30%;
+            align-items: center;
+
+            .card-task-header-title {
+               font-size: 45px
+            }
+         }
+
+         .card-task-content {
+            height: 75%;
+            background: #8EA9DB;
+            display: flex;
+            flex-direction: column;
+
+            .task-content-container {
+
+               .status-task {
+                  height: 80px;
+                  .lateral-bar {
+                     margin-right: 16px;
+                     height: 45px;
+                     border-left: solid 5px #000;
+                  }
+
+                  .status-task-group {
+                     margin-bottom: 0;
+                     font-size: 20px;
+                  }
+
+                  .status-task-done{
+                     color: #686868;
+                  }
+
+                  .btn-edit-task {
+                     order: 1;
+                     margin: 0;
+                     color: #000;
+                  }
+               }
+            }
+         }
+         .datails-button{
+            height: 15%;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-self: flex-end;
+            .button-icon {
+               order: 2;
+               margin-left: 15px;
+               margin-right: 0;
+            }
+         }
+      }
+   }
+
+
+
+
 }
