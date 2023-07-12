@@ -18,15 +18,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background:
    flex-direction: column;
    border-radius: 8px;
    background-color: #E4E4E4;
-   margin-top: 15px;
+   //margin-top: 15px;
    box-shadow: 0 4px .5 #EFEFEF;
-   height: calc(100% - 20px);
+   height: calc(100%);
 
    .card-head{
       padding: 5px 10px 0 10px;
       h1,h2,h3,h4,h5{
          padding: 5px;
          margin: 5px 0 10px 0;
+         display: flex;
+         align-items: center;
+         color: #E2FF65;
+         background: #1A3053;
+         border-radius: 5px;
+      }
+      mat-icon{
+         margin-right: 10px;
       }
    }
 
