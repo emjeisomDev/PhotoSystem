@@ -7,6 +7,103 @@
       </h1>
    </div>
 
-   
+   <div class="card-body">
+
+      <mat-card class="form-container">
+
+         <div class="scrollwrap scrollwrap_delayed">
+            <mat-card-content>
+               <form class="power-of-attorney-form">
+
+                  <div>
+                     <label>Tipo de procuração: </label>
+                     <mat-radio-group>
+                        <mat-radio-button checked="" value="pf" selected>Pessoa Física</mat-radio-button>
+                        <mat-radio-button value="pj">Pessoa Jurídica</mat-radio-button>
+                     </mat-radio-group>
+                  </div>
+
+                  <mat-form-field class="single-column" appearance="outline">
+                     <mat-label>Concessionária</mat-label>
+                     <mat-select>
+                        <mat-option value="option1"></mat-option>
+                        <mat-option value="option2">Option 1</mat-option>
+                        <mat-option value="option3">Option 2</mat-option>
+                        <mat-option value="option4">Option 3</mat-option>
+                     </mat-select>
+                  </mat-form-field>
+
+                  <div class="double-column" *ngIf="false">
+                     <mat-form-field>
+                        <mat-label>Razão Social</mat-label>
+                        <input type="text" matInput>
+                     </mat-form-field>
+
+                     <mat-form-field>
+                        <mat-label>CNPJ</mat-label>
+                        <input type="text" matInput>
+                     </mat-form-field>
+                  </div>
+
+                  <mat-form-field class="single-column" *ngIf="false">
+                     <mat-label>Endereço Jurídico</mat-label>
+                     <input type="text" matInput>
+                  </mat-form-field>
+
+                  <div class="double-column">
+                     <mat-form-field>
+                        <mat-label>Nome Completo</mat-label>
+                        <input type="text" matInput>
+                     </mat-form-field>
+
+                     <mat-form-field>
+                        <mat-label>CPF</mat-label>
+                        <input type="text" matInput>
+                     </mat-form-field>
+                  </div>
+
+                  <div>
+                     <label>Gênero: </label>
+                     <mat-radio-group>
+                        <mat-radio-button checked="" value="masc">Masculino</mat-radio-button>
+                        <mat-radio-button value="fem">Feminino</mat-radio-button>
+                        <mat-radio-button value="outro">Outro</mat-radio-button>
+                     </mat-radio-group>
+                  </div>
+
+                  <div>
+                     <mat-form-field class="single-column">
+                        <mat-label>Endereço</mat-label>
+                        <input type="text" matInput>
+                     </mat-form-field>
+                     <mat-checkbox *ngIf="false">Mesmo do endereço jurídico</mat-checkbox>
+                  </div>
+
+                  <div class="double-column">
+                     <mat-form-field>
+                        <mat-label>Nacionalidade</mat-label>
+                        <input type="text" matInput>
+                     </mat-form-field>
+
+                     <mat-form-field>
+                        <mat-label>Estado Civil</mat-label>
+                        <input type="text" matInput>
+                     </mat-form-field>
+                  </div>
+               </form>
+
+               <mat-card-actions>
+                  <button mat-raised-button color="warn">Cancelar</button>
+                  <button mat-raised-button color="primary">SALVAR</button>
+               </mat-card-actions>
+
+            </mat-card-content>
+         </div>
+
+
+
+      </mat-card>
+
+   </div>
 
 </div>

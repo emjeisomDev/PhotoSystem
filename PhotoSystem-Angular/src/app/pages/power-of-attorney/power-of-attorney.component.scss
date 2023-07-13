@@ -1,0 +1,83 @@
+.card-body {
+   height: 100%;
+   background-color: #B4C6E7;
+
+   .form-container {
+      margin: 0 auto;
+      height: 100%;
+      width: 60%;
+      background: #FFF;
+      border-radius: 10px;
+
+      mat-card-content {
+
+         max-height: 260px;
+
+         .single-column {
+            width: 100%;
+         }
+
+         .double-column {
+            display: flex;
+            gap: 10px;
+
+            mat-form-field {
+               width: 50%;
+            }
+         }
+      }
+
+      mat-card-actions{
+         gap: 10px;
+         padding: 0;
+         button{
+            padding: 0;
+            width: 50%;
+            font-size: 15px;
+         }
+      }
+
+
+   }
+}
+
+//scrollbar and visibility on hover and focus
+.scrollwrap {
+   overflow-y: auto;
+   visibility: hidden;
+   height: calc(100%);
+}
+
+mat-card-content,
+.scrollwrap:hover,
+.scrollwrap:focus {
+   visibility: visible;
+}
+
+.scrollwrap_delayed{
+   transition: visibility 0.5s 0.2s;
+}
+
+.scrollwrap_delayed:hover{
+   transition: visibility 0.2s 0.2s;
+}
+
+//works on chrome, edge and safari
+.scrollwrap::-webkit-scrollbar{
+   width: 10px;
+}
+
+.scrollwrap::-webkit-scrollbar-track{
+   background: transparent;
+}
+
+.scrollwrap::-webkit-scrollbar-thumb{
+   background-color: #b4b4b4;
+   border-radius: 20px;
+}
+
+//works on firefox
+.scrollwrap{
+   scrollbar-width: thin;
+   scrollbar-color: #b4b4b4 transparent;
+}
