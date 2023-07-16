@@ -1,0 +1,61 @@
+.card-body {
+   height: 100%;
+   background-color: #B4C6E7;
+   gap: 10px;
+
+   mat-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      mat-card-content {
+         display: flex;
+         justify-content: space-between;
+         transition: all 0.3s ease;
+
+         .card-content-text {
+            width: 65%;
+            transition: all 0.3s ease;
+
+            p {
+               text-align: justify;
+               font-size: 15px;
+            }
+         }
+
+         .measure-system-image{
+            width: 300px;
+            height: 250px;
+            align-self: center;
+            margin-right: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+         }
+      }
+
+      .measure-type-buttons {
+         width: 100%;
+         gap: 10px;
+         align-self: flex-end;
+
+         .low-voltage,
+         .medium-voltage {
+            width: 50%;
+            height: 60px;
+            font-size: 20px;
+            color: #FFF;
+         }
+
+         .low-voltage {
+            background: #3F51B5;
+         }
+
+         .medium-voltage {
+            background: #33691E;
+         }
+
+      }
+   }
+
+
+}

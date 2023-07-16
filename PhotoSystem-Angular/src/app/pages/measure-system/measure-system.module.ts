@@ -14,6 +14,10 @@ import { MediumVoltageSystemComponent } from './medium-voltage-system/medium-vol
   imports: [
     CommonModule,
     MeasureSystemRoutingModule
+  ],
+  exports:[
+   LowVoltageSystemComponent,
+   MediumVoltageSystemComponent
   ]
 })
 export class MeasureSystemModule { }

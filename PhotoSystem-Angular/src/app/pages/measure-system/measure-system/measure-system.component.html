@@ -7,4 +7,57 @@
       </h1>
    </div>
 
+   <div class="card-body">
+      <mat-card>
+         <mat-card-content *ngIf="content">
+
+            <div class="card-content-text">
+               <p>
+                  O dimensionamento de energia solar pode ser definido como o estudo e a análise das especificidades do
+                  local em que o sistema fotovoltaico será implementado, bem como a identificação e a escolha de quais
+                  equipamentos deverão ser utilizados na produção de energia. Ou seja, consiste no <b>planejamento da
+                  instalação</b>.
+               </p>
+               <p>
+                  É importante ressaltar que o dimensionamento é imprescindível para a implementação de qualquer sistema
+                  fotovoltaico, uma vez que é por meio dele que se identifica qual é o consumo diário de energia
+                  elétrica do local e as especificações dos aparelhos que vão integrar o sistema de energia solar. Com
+                  isso, é possível garantir um melhor aproveitamento do espaço disponível e, claro, a máxima eficiência
+                  na produção.
+               </p>
+               <p>
+                  Vale lembrar que o dimensionamento de um sistema fotovoltaico não é uma tarefa simples, pois demanda
+                  conhecimentos específicos, inclusive em física. Por isso, para garantir o sucesso do investimento, é
+                  importante que os estudos e cálculos sejam feitos por <b>profissionais qualificados</b>.
+               </p>
+               <p>
+                  Apesar disso, é interessante você saber quais fatores são levados em consideração na hora do
+                  planejamento do sistema fotovoltaico.
+               </p>
+            </div>
+
+            <img mat-card-image class="measure-system-image"
+               src="../../../../assets/mesure-system.jpeg"
+               alt="Usina fotovoltaica terrestre em um campo."
+            >
+
+         </mat-card-content>
+
+         <mat-card-actions class="measure-type-buttons">
+            <button mat-raised-button (click)="showGroupAMeasure()" class="medium-voltage">Grupo A</button>
+            <button mat-raised-button (click)="showGroupBMeasure()" class="low-voltage">Grupo B</button>
+         </mat-card-actions>
+
+         <mat-card-content class="measure-medium-voltage" *ngIf="btnGroupA">
+            <app-medium-voltage-system></app-medium-voltage-system>
+         </mat-card-content>
+
+         <mat-card-content class="measure-low-voltage" *ngIf="btnGroupB">
+            <app-low-voltage-system></app-low-voltage-system>
+         </mat-card-content>
+
+      </mat-card>
+
+   </div>
+
 </div>

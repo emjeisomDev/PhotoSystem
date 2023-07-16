@@ -7,6 +7,7 @@ import { ConsumptionAnalysisComponent } from './consumption-analysis/consumption
 import { HomeComponent } from './home/home.component';
 import { PowerOfAttorneyComponent } from './power-of-attorney/power-of-attorney.component';
 import { MeasureSystemComponent } from './measure-system/measure-system/measure-system.component';
+import { MeasureSystemModule } from './measure-system/measure-system.module';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { MeasureSystemComponent } from './measure-system/measure-system/measure-
   imports: [
     CommonModule,
     PagesRoutingModule,
+    MeasureSystemModule,
     AppMaterialModule
   ]
 })
